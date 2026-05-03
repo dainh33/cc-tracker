@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <title>Community Center Tracker</title>
+</head>
+
+<body>
+
+    <header class="page-header py-5 mb-4">
+        <div class="container text-center">
+            <h1 class="fw-bold mb-2">Community Center Checklist</h1>
+            <p class="lead mb-0">Standard bundles grouped by season, with crop deadlines and saved progress.</p>
+        </div>
+    </header>
+
+    <main class="container-fluid tracker-shell pb-5">
+        <section class="card info-card mb-4">
+            <div class="card-body">
+                <div class="row g-3 align-items-center">
+                    <div class="col-lg-8">
+                        <h2 class="h5 fw-bold mb-1">Progress</h2>
+                        <p class="mb-0 text-muted" id="progressText">Loading tracker...</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <label for="searchInput" class="form-label fw-bold">Search item</label>
+                        <input type="search" class="form-control" id="searchInput"
+                            placeholder="Example: 5x Gold Parsnip">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="row g-4" id="seasonGrid"></div>
+    </main>
+    <script src="main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

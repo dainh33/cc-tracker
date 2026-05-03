@@ -1,0 +1,169 @@
+body {
+  background: #f7f3e8;
+}
+
+.page-header {
+  background: #5f8d4e;
+  color: white;
+  border-radius: 0 0 2rem 2rem;
+}
+
+.tracker-shell {
+  max-width: 1500px;
+}
+
+.season-card,
+.info-card {
+  border: 0;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
+}
+
+.season-header {
+  color: white;
+  padding: 0;
+}
+
+.season-toggle {
+  width: 100%;
+  border: 0;
+  color: white;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  cursor: pointer;
+  box-shadow: none !important;
+}
+
+.season-toggle:hover,
+.season-toggle:focus,
+.season-toggle:not(.collapsed) {
+  color: white;
+  outline: none;
+  box-shadow: none;
+}
+
+.season-toggle::after {
+  flex-shrink: 0;
+  width: var(--bs-accordion-btn-icon-width);
+  height: var(--bs-accordion-btn-icon-width);
+  margin-left: auto;
+  content: "";
+  background-image: var(--bs-accordion-btn-icon);
+  background-repeat: no-repeat;
+  background-size: var(--bs-accordion-btn-icon-width);
+  transition: var(--bs-accordion-btn-icon-transition);
+}
+
+.season-toggle:not(.collapsed)::after {
+  background-image: var(--bs-accordion-btn-active-icon);
+  transform: var(--bs-accordion-btn-icon-transform);
+}
+
+.spring-bg {
+  background: #6ab04c;
+}
+
+.summer-bg {
+  background: #f9a825;
+}
+
+.fall-bg {
+  background: #d35400;
+}
+
+.winter-bg {
+  background: #4aa3df;
+}
+
+.any-bg {
+  background: #6c5ce7;
+}
+
+.tracker-item {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 1rem !important;
+  overflow: hidden;
+  height: 100%;
+  background: white;
+}
+
+.tracker-header {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 0;
+  min-height: 76px;
+}
+
+.item-check-wrap {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 0.75rem;
+  background: white;
+}
+
+.item-check {
+  width: 1.1rem;
+  height: 1.1rem;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.tracker-header .accordion-button {
+  flex: 1;
+  width: auto;
+  padding: 0.85rem 1rem 0.85rem 0;
+  background: white;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.accordion-button:not(.collapsed) {
+  background: #fff8dc;
+  color: #2d3436;
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button::after {
+  flex-shrink: 0;
+}
+
+.item-title {
+  display: block;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.item-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.45rem;
+}
+
+.bundle-badge,
+.choice-badge,
+.deadline-badge {
+  font-size: 0.7rem;
+}
+
+.completed-row .item-title {
+  text-decoration: line-through;
+  opacity: 0.65;
+}
+
+.completed-row .tracker-header .accordion-button,
+.completed-row .item-check-wrap {
+  background: #f1f8ef;
+}
+
+.item-detail-label {
+  font-weight: 800;
+}
